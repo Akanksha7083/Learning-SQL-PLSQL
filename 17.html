@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>
+      CHARACTER FUNCTION
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:'Times New Roman', Times, serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+        <a href="sql.html">sql</a>
+        <a href="plsql.html">plsql</a>
+        <a href="about.html">About</a>
+      </div>
+    <h1 style="color:lightblue;text-align:center; background-color:black" >CHARACTER FUNCTIONS</h1>
+
+
+     <b><h2>CHARACTER FUNCTIONS</h2></b>
+        Character functions accept character inputs and can return either characters or number values as output.
+         SQL provides a number of different character datatypes which includes CHAR, VARCHAR, VARCHAR2, LONG,
+          RAW, and LONG RAW. The various datatypes are categorized into three different datatypes :<br>
+1. VARCHAR2 - A variable-length character datatype whose data is converted by the RDBMS.<br>
+2. CHAR - The fixed-length datatype.<br>
+3. SQL provides a rich set of character functions that allow you to get information about strings and 
+modify the contents of those strings in multiple ways. <br><br>
+Character functions are of the following two types:<br>
+1. Case-Manipulative Functions (LOWER, UPPER and INITCAP)<br>
+2. Character-Manipulative Functions (CONCAT, LENGTH, SUBSTR, INSTR, LPAD, RPAD, TRIM and REPLACE)<br>
+
+<h3>Case-Manipulative Functions</h3>
+
+1. LOWER : This function converts alpha character values to lowercase. LOWER will actually return a fixed-length
+ string if the incoming string is fixed-length. LOWER will not change any characters in the string that are not 
+ letters, since case is irrelevant for numbers and special characters, such as the dollar sign ( $ ) or modulus 
+ ( % ).<br><br>
+Syntax:<br>
+LOWER(SQL course)<br><br>
+2. UPPER : This function converts alpha character values to uppercase. Also UPPER function too, 
+will actually return a fixed-length string if the incoming string is fixed-length. UPPER will not change 
+any characters in the string that are not letters, since case is irrelevant for numbers and special characters, 
+such as the dollar sign ( $ ) or modulus ( % ).<br><br>
+Syntax:<br>
+UPPER(SQL course)<br><br>
+4. INITCAP : This function converts alpha character values to uppercase for the first letter of each word 
+and all others in lowercase. The words in the string is must be separated by either # or _ or space.<br><br>
+Syntax:<br>
+INITCAP(SQL course)<br><br>
+<h3>
+Character-Manipulative Functions</h3>
+
+1. CONCAT : This function always appends ( concatenates ) string2 to the end of string1. If either of the 
+string is NULL, CONCAT function returns the non-NULL argument. If both strings are NULL, CONCAT returns NULL.<br><br>
+Syntax:<br>
+ CONCAT('String1', 'String2')<br><br>
+
+2. LENGTH : This function returns the length of the input string. If the input string is NULL, then 
+LENGTH function returns NULL and not Zero. Also, if the input string contains extra spaces at the start,
+ or in between or at the end of the string, then the LENGTH function includes the extra spaces too and returns 
+ the complete length of the string.<br><br>
+Syntax:<br>
+LENGTH(Column|Expression)<br>
+
+3. SUBSTR : This function returns a portion of a string from a given start point to an end point. If a 
+substring length is not given, then SUBSTR returns all the characters till the end of string (from the starting 
+position specified).<br><br>
+Syntax:<br>
+SUBSTR('String',start-index,length_of_extracted_string)<br><br>
+ 
+4. INSTR : This function returns numeric position of a character or a string in a given string. 
+Optionally, you can provide a position m to start searching, and the occurrence n of string. Also, if the 
+starting position is not given, then it starts search from index 1, by default. If after searching in the string,
+ no match is found then, INSTR function returns 0.<br><br>
+Syntax: <br>INSTR(Column|Expression, 'String', [,m], [n])<br><br>
+<img src="25.PNG" alt="Example" width="400" height="200"><br><br>
+<img src="26.PNG" alt="Example" width="400" height="200"><br><br>
+<img src="27.PNG" alt="Example" width="400" height="200"><br><br>
+      </div>
+    </div>
+  </div></body></html>

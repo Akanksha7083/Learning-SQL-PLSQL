@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>
+      DATE FUNCTION
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:'Times New Roman', Times, serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+        <a href="sql.html">sql</a>
+        <a href="plsql.html">plsql</a>
+        <a href="about.html">About</a>
+      </div>
+    <h1 style="color:lightblue;text-align:center; background-color:black" >DATE FUNCTIONS</h1>
+
+
+     <b><h2>DATE FUNCTIONS</h2></b>
+     In SQL, dates are complicated for newbies, since while working with a database, the format of the data
+         in the table must be matched with the input data to insert. In various scenarios instead of date, datetime 
+         (time is also involved with date) is used. <br>
+For storing a date or a date and time value in a database,MySQL offers the following data types:<br>
+<br>
+DATE	format YYYY-MM-DD<br>
+DATETIME 	format: YYYY-MM-DD HH:MI: SS<br>
+TIMESTAMP 	format: YYYY-MM-DD HH:MI: SS<br>
+YEAR 	format YYYY or YY<br>
+Now, come to some popular functions in SQL date functions.<br>
+<br>
+1.<u>NOW()</u><br>
+Returns the current date and time. 
+<br>
+Query:
+<br>
+SELECT NOW();<br><br>
+2.<u>CURDATE()</u><br>
+ Returns the current date. <br>
+Query:<br>
+SELECT CURDATE();<br><br>
+3.<u>CURTIME()</u><br>
+ Returns the current time. <br>
+Query:
+<br>
+SELECT CURTIME();
+<br><br>
+4.<u>DATE()</u><br>
+Extracts the date part of a date or date/time expression. <br><br>
+5.<u>DATE_ADD() </u><br>
+ Adds a specified time interval to a date.
+<br>
+Syntax:
+<br>
+DATE_ADD(date, INTERVAL expr type);
+<br>
+Where,  date - valid date expression, and expr is the number of intervals we want to add. and type can be one 
+of the following: MICROSECOND, SECOND, MINUTE, HOUR, DAY, WEEK, MONTH, QUARTER, YEAR, etc. <br><br>
+6.<u>DATE_SUB()</u><br>
+ Subtracts a specified time interval from a date. The syntax for DATE_SUB is the same as DATE_ADD just the 
+ difference is that DATE_SUB is used to subtract a given interval of date.<br>
+
+7.<u>DATEDIFF()</u><br>
+ Returns the number of days between two dates. 
+<br><br>
+Syntax:<br>
+
+8.<u>DATEDIFF(date1, date2);</u>
+<br><br>
+date1 & date2- date/time expression<br><br>
+<img src="28.PNG" alt="Example" width="300" height="200"><br><br>
+<img src="29.PNG" alt="Example" width="300" height="200"><br><br>
+<img src="30.PNG" alt="Example" width="400" height="200"><br><br>
+      </div>
+    </div>
+  </div></body></html>

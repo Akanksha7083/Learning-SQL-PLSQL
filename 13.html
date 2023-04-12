@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>
+        VIEWS
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:'Times New Roman', Times, serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+        <a href="sql.html">sql</a>
+        <a href="plsql.html">plsql</a>
+        <a href="about.html">About</a>
+      </div>
+    <h1 style="color:lightblue;text-align:center; background-color:black" >VIEWS</h1>
+<p>Views in SQL are kind of virtual tables. A view also has rows and columns as they are 
+    in a real table in the database. We can create a view by selecting fields from one or 
+    more tables present in the database. A View can either have all the rows of a table or
+     specific rows based on certain condition. In this article we will learn about
+     creating and deleting  Views. </p><br><br>
+
+     <b><h2>CREATING VIEWS</h2></b>
+     We can create View using CREATE VIEW statement. A View can be created from a single table or multiple tables.<br> <br>
+
+    <b>Syntax:</b>CREATE VIEW view_name AS SELECT column1, column2....FROM table_name WHERE condition;<br><br>
+
+    <div>
+        <img src="d19.PNG" alt=""error>
+     </div>
+     <b><h2>DELETING VIEWS</h2></b>
+     <p>We have learned about creating a View, but what if a created View is not needed any more?
+      Obviously we will want to delete it. SQL allows us to delete an existing View. We can delete or drop
+       a View using the DROP statement.</p><br>
+
+     <b>Syntax:</b>DROP VIEW view_name;<br><br>
+    
+
+    <div>
+        <img src="d20.PNG" alt=""error>
+     </div>
+</body>
+</html>

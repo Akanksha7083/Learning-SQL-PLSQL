@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>
+       Show, Create,Use Dtabase command.
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:sans-serif, Helvetica,sans-serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+   <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="sql.html">sql</a>
+      <a href="plsql.html">plsql</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <h1 style="color:lightblue;text-align:center; background-color:black" >TRIGGER</h1>
+    Trigger is invoked by Oracle engine automatically whenever a specified event occurs.Trigger is 
+stored into database and invoked repeatedly, when specific condition match.
+Triggers are stored programs, which are automatically executed or fired when some event occurs.
+
+Triggers are written to be executed in response to any of the following events.
+<br>
+A database manipulation (DML) statement (DELETE, INSERT, or UPDATE).<br>
+A database definition (DDL) statement (CREATE, ALTER, or DROP).<br>
+A database operation (SERVERERROR, LOGON, LOGOFF, STARTUP, or SHUTDOWN).<br>
+Triggers could be defined on the table, view, schema, or database with which the event is associated.<br>
+<b><h2>Creating a trigger:</h2></b>
+<b>Syntax for creating trigger:</b>
+<br>
+CREATE [OR REPLACE ] TRIGGER trigger_name   <br>
+{BEFORE | AFTER | INSTEAD OF }   <br>
+{INSERT [OR] | UPDATE [OR] | DELETE} <br>  
+[OF col_name]   <br>
+ON table_name   <br>
+[REFERENCING OLD AS o NEW AS n]   <br>
+[FOR EACH ROW]   <br>
+WHEN (condition)    <br>
+DECLARE  <br>
+   Declaration-statements  <br>
+BEGIN   <br>
+   Executable-statements  <br>
+EXCEPTION  <br>
+   Exception-handling-statements  <br>
+END;  <br><br>
+<b><h2>INPUT</h2></b>
+<img src="59.PNG" alt="Example" width="500" height="300">
+<b><h2>OUTPUT</h2></b>
+<img src="60.PNG" alt="Example" width="350" height="50">
+
+</div>
+</div>
+</div></body></html>

@@ -1,0 +1,81 @@
+html>
+<head>
+    <title>
+       Show, Create,Use Dtabase command.
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:sans-serif, Helvetica,sans-serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+   <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="sql.html">sql</a>
+      <a href="plsql.html">plsql</a>
+      <a href="about.html">About</a>
+    </div>
+<h1 style="color:lightblue;text-align:center; background-color:black" >EXCEPTION HANDLING</h1>
+An error occurs during the program execution is called Exception in PL/SQL.
+PL/SQL facilitates programmers to catch such conditions using exception block in the program and an 
+appropriate action is taken against the error condition.
+
+There are two type of exceptions:<br><br>
+
+1. System-defined Exceptions<br>
+2. User-defined Exceptions<br><br>
+<b><h2>PL/SQL Exception Handling</h2></b>
+<b>Syntax for exception handling:</b>
+<br>
+DECLARE  <br>
+   (declarations section)<br>
+BEGIN  <br>
+   (executable command(s))  <br>
+EXCEPTION  <br>
+   (exception handling goes here)<br>
+   WHEN exception1 THEN   <br>
+       exception1-handling-statements   <br>
+   WHEN exception2  THEN   <br>
+      exception2-handling-state<br>ments   
+   WHEN exception3 THEN   <br>
+      exception3-handling-statements  <br>
+   ........  <br>
+   WHEN others THEN  <br>
+      exception3-handling-statements  <br>
+END;  <br><br>
+<b><h2>INPUT</h2></b>
+<img src="57.PNG" alt="Example" width="500" height="300">
+<b><h2>OUTPUT</h2></b>
+<img src="58.PNG" alt="Example" width="500" height="100">
+
+</div>
+</div>
+</div></body></html>

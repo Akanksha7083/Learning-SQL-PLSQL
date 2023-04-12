@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>
+       Show, Create, Desc table command.
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:sans-serif, Helvetica,sans-serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+        <a href="sql.html">sql</a>
+        <a href="plsql.html">plsql</a>
+        <a href="about.html">About</a>
+      </div>
+<h1 style="color:lightblue;text-align:center; background-color:black" >SHOW, CREATE, AND USE DATABASE COMMAND</h1>
+<b><h2>SHOW TABLES COMMAND</h2></b>
+<p>The SHOW TABLES Statement of MySQL lists out all the existing tables in the current database.<br>
+    <b> Syntax:</b> show tables;
+</p>
+<div>
+<img src="d4.PNG" alt="error">
+</div>
+<b><h2>CREATE TABLE COMMAND</h2></b>
+<p>The CREATE TABLE  statement is used to create a new table in the current selected database.<br>
+    <b> Syntax:</b>CREATE TABLE table_name;<br><br>
+
+<div>
+<img src="d5.PNG" alt="error">
+</div>
+<b><h2>CREATING  A TABLE FROM ANOTHER TABLE </h2></b>
+We can use the SELECT statement with INSERT INTO statement to create a new table and copy rows from one table
+     and insert them into another table. The use of this statement is similar to that of
+      the INSERT INTO statement. The difference is that the SELECT statement is used here
+       to select data from a different table.<br>
+       <b> Syntax:</b>CREATE TABLE newtable_name AS SELECT * FROM existing_tablename;<br><br>
+       <div>
+        <img src="d13.PNG" alt="error">
+        </div>
+       
+<b><h2>DESC TABLE COMMAND</h2></b>
+<p>As the name suggests, DESCRIBE is used to describe something. Since in database we have
+     tables, that’s why we use DESCRIBE or DESC(both are same) command to describe the 
+     structure of a table.<br>
+
+    <b> Syntax:</b> DESC table_name;<br>
+    OR<br>
+   <b> Syntax:</b>DESCRIBE table_name;
+</p>
+<div>
+<img src="d6.PNG" alt="error">
+</div>
+</body>
+</html>

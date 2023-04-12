@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>
+       CONDITIONAL RETRIEVAL OF ROWS
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:'Times New Roman', Times, serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+        <a href="sql.html">sql</a>
+        <a href="plsql.html">plsql</a>
+        <a href="about.html">About</a>
+      </div>
+    <h1 style="color:lightblue;text-align:center; background-color:black" >CONDITIONAL RETRIEVAL OF ROWS</h1>
+<p>In SQL the where clause is used for retrieving the data conditionally.The WHERE clause 
+  indicates the condition or conditions that rows must satisfy to be 
+  selected. The WHERE condition is an expression that evaluates to true for each row to be
+   selected. The statement selects all rows if there is no WHERE clause.<br>
+  
+  <b>Consider the following facts when using WHERE clause in a SELECT statement:</b>
+  
+  1.In a SELECT statement, the WHERE clause directly follows the FROM clause.<br>
+  
+  2.In the WHERE clause, the condition(s) is made up of any of column names, literal values,
+   expressions (such as arithmetic expressions), constants, list of values, operators, or 
+   MySQL built-in or user-defined functions (except for aggregate functions)..<br>
+
+    For example, you might only want to see how many individuals in your database 
+    live in a given city. Or you might only want to see which individuals have registered
+     with your database within a given time period.<br><br>
+
+    <b> Syntax:</b>SELECT COLUMN_NAME_1, COLUMN_NAME_2, .... FROM TABLE_NAME WHERE CONDITION;
+    </p><br>
+ 
+ <div>
+    <img src="d14.PNG" alt="error" >
+    </div><br>
+</body>
+</html>

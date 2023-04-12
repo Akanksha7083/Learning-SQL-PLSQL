@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>
+       COMMIT AND ROLLBACK
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:'Times New Roman', Times, serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+        <a href="sql.html">sql</a>
+        <a href="plsql.html">plsql</a>
+        <a href="about.html">About</a>
+      </div>
+    <h1 style="color:lightblue;text-align:center; background-color:black" >COMMIT AND ROLLBACK</h1>
+
+
+     <b><h2>COMMIT</h2></b>
+     <p>COMMIT in SQL is a transaction control language that is used to permanently save the changes done in the
+         transaction in tables/databases. The database cannot regain its previous state after its execution of 
+         commit. If you want to save all the commands which are executed in a transaction, then just after 
+         completing the transaction, you have to execute the commit command. This command will save all the 
+         commands which are executed on a table. All these changes made to the table will be saved to the disk 
+         permanently.Whenever the commit command is executed in SQL, all the updations which we have carried on 
+         the table will be uploaded to the server, and hence our work will be saved.</p><br><br>
+
+         <b><h3>QUERY:/</h3></b>
+     <div>
+        <img src="d21.PNG" alt=""error>
+     </div><br>
+
+   <b><h2>ROLLBACK</h2></b>
+     <p>The rollback command is used to get back to the previous permanent status of the table, which is saved by the commit command.
+        Suppose, we have started editing a table and later thought that the changes that we have recently carried out on a table are 
+        not required. Then, in that case, we can roll back our transaction, which simply means to get back to the previous permanent 
+        status of the table, which is saved by the commit command.<br><br><br>
+        
+        <b><h3>QUERY:</h3></b>
+        <div>
+            <img src="d22.PNG" alt=""error>
+         </div>
+     
+     
+   
+</body>
+</html>

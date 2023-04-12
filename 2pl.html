@@ -1,0 +1,141 @@
+<html>
+<head>
+    <title>
+       control statements 
+    </title>
+<style>
+body    {background-color:lightblue;margin: 0%;font-family:sans-serif, Helvetica,sans-serif;font-size: 20px;color: darkslategrey; 
+        letter-spacing: 3px;word-spacing : 5px;}
+h2    {color:black;font-family: fantasy;font-weight: 500;}
+p,ul  {font-family:sans-serif}
+
+b       {text-decoration: underline}
+.topnav {
+  background-color:black;
+  overflow: hidden;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color:powderblue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: underline;
+  font-size:xx-large;
+  font-family:monospace;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:darkturquoise;
+  color: black;
+}
+</style>
+</head>
+<body>
+   <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="sql.html">sql</a>
+      <a href="plsql.html">plsql</a>
+      <a href="about.html">About</a>
+    </div>
+<h1 style="color:lightblue;text-align:center; background-color:black" >CONTROL STATEMENTS</h1>
+
+PL/SQL supports the programming language features like conditional statements and iterative statements.<br>
+<br><b>Syntax:</b>(IF-THEN statement):<br>
+
+IF condition   <br>
+THEN   <br>
+Statement: {It is executed when condition is true}  <br>
+END IF;  <br><br>
+This syntax is used when you want to execute statements only when condition is TRUE.<br>
+<br>
+<b>Syntax: </b>(IF-THEN-ELSE statement):<br>
+
+IF condition   <br>
+THEN  <br>
+   {...statements to execute when condition is TRUE...}<br>  
+ELSE  <br>
+   {...statements to execute when condition is FALSE...}  <br>
+END IF;   <br><br>
+This syntax is used when you want to execute one set of statements when condition is TRUE or a 
+different set of statements when condition is FALSE.<br>
+<h2><b>PL/SQL Loop</b></h2>
+The PL/SQL loops are used to repeat the execution of one or more statements for specified number of times.
+ These are also known as iterative control statements.<br><br>
+
+<b>Syntax for a basic loop:</b>
+<br>
+LOOP  <br>
+Sequence of statements;  <br>
+END LOOP;  <br><br>
+<b><h2>INPUT</h2></b>
+<img src="39.PNG" alt="Example" width="500" height="300">
+<B><h2>OUTPUT</h2></B>
+<img src="40.PNG" alt="Example" width="350" height="180"><br><br>
+<b><h2>PL/SQL Exit Loop</h2></b>
+PL/SQL exit loop is used when a set of statements is to be executed at least once before the termination of 
+the loop. There must be an EXIT condition specified in the loop, otherwise the loop will get into an infinite 
+number of iterations. After the occurrence of EXIT condition, the process exits the loop.<br><br>
+<b>Syntax of exit loop:</b>
+<br>
+LOOP   <br>
+   statements;   <br>
+   EXIT;   <br>
+   {or EXIT WHEN condition;}  <br>
+END LOOP;  <br><br>
+<b><h2>INPUT</h2></b>
+<img src="41.PNG" alt="Example" width="500" height="300">
+<B><h2>OUTPUT</h2></B>
+<img src="42.PNG" alt="Example" width="500" height="300"><br><br>
+<b><h2>PL/SQL While Loop</h2></b>
+PL/SQL while loop is used when a set of statements has to be executed as long as a condition is true, 
+the While loop is used. The condition is decided at the beginning of each iteration and continues until 
+the condition becomes false.<br><br>
+<b>Syntax of while loop:</b>
+<br>
+WHILE (condition)  <br>
+ LOOP statements;   <br>
+END LOOP;  <br><br>
+<b><h2>INPUT</h2></b>
+<img src="43.PNG" alt="Example" width="500" height="300">
+<B><h2>OUTPUT</h2></B>
+<img src="44.PNG" alt="Example" width="500" height="300"><br><br>
+<b><h2>PL/SQL FOR Loop</h2></b>
+PL/SQL for loop is used when when you want to execute a set of statements for a predetermined number 
+of times. The loop is iterated between the start and end integer values. The counter is always incremented by 
+1 and once the counter reaches the value of end integer, the loop ends.<br><br>
+
+<b>Syntax of for loop:</b><br>
+
+FOR counter IN initial_value .. final_value LOOP  <br>
+  LOOP statements;   <br>
+END LOOP;  <br><br>
+initial_value : Start integer value<br>
+final_value : End integer value<br><br>
+<b><h2>INPUT</h2></b>
+<img src="45.PNG" alt="Example" width="500" height="300">
+<B><h2>OUTPUT</h2></B>
+<img src="46.PNG" alt="Example" width="500" height="300"><br><br>
+<b><h2>PL/SQL GOTO Statement</h2></b>
+In PL/SQL, GOTO statement makes you able to get an unconditional jump from the GOTO to a specific executable
+ statement label in the same subprogram of the PL/SQL block.
+
+Here the label declaration which contains the label_name encapsulated within the '<< >>' symbol and must be 
+followed by at least one statement to execute.
+<br><br>
+<b>Syntax:</b>
+<br>
+GOTO label_name;  <br><br>
+<b><h2>INPUT</h2></b>
+<img src="47.PNG" alt="Example" width="500" height="300">
+<B><h2>OUTPUT</h2></B>
+<img src="48.PNG" alt="Example" width="500" height="300">
+
+</div>
+</div>
+</div></body></html>
